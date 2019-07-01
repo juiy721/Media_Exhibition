@@ -1,31 +1,8 @@
-<!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="write.css">
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="test1.css" />
   <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
-  
-  <title>みどりの手紙</title>
-</head>
-<body>
-  <div class="header">
-      
-    <h1 class="header-Heading">
-        <a href="#">
-          <img src="logo.png" class="midori">
-        </a>
-    </h1>
-
-    <ul class = "foo">
-      <li><a href="#">サイトの使い方</a></li>
-      <li><a href="#">手紙を書く</a></li>
-      <li><a href="#">手紙を選ぶ</a></li>
-    </ul>
-
-  </div>
-
   <script>
     window.addEventListener("load", init);
 
@@ -35,8 +12,8 @@
       var stage = new createjs.Stage("myCanvas");
 
       var bmp = new createjs.Bitmap("binsen.png");
-      bmp.scaleX = 0.3; // 画像の幅
-      bmp.scaleY = 0.3; // 画像の高さ
+      bmp.scaleX = 0.3; // 画像の幅を2倍にする
+      bmp.scaleY = 0.3; // 画像の高さを2倍にする
       stage.addChild(bmp);
 
       // タッチイベントが有効なブラウザの場合、
@@ -54,7 +31,7 @@
       function handleDown(event) {
         // 線の描画を開始
         shape.graphics
-                .beginStroke("Black") // 黒色で、描画を開始
+                .beginStroke("Black") // 青色で、描画を開始
         shape.graphics.moveTo(event.stageX, event.stageY) // 描画開始位置を指定
         // ステージ上でマウスを動かした時と離した時のイベント設定
         stage.addEventListener("stagemousemove", handleMove);
@@ -65,14 +42,16 @@
       // マウスが動いた時に実行する
       function handleMove(event) {
         // マウス座標への線を引く
-        shape.graphics.lineTo(event.stageX, event.stageY);
+        shape.graphics
+                .lineTo(event.stageX, event.stageY);
       }
 
 
       // マウスボタンが離された時に実行される
       function handleUp(event) {
         // マウス座標への線を引く
-        shape.graphics.lineTo(event.stageX, event.stageY);
+        shape.graphics
+                .lineTo(event.stageX, event.stageY);
         // 線の描画を終了する
         shape.graphics.endStroke();
         // イベント解除
@@ -86,11 +65,8 @@
       }
     }
   </script>
-
-  <section>
-    <canvas id="myCanvas" width="770" height="812"></canvas>
-    <a href="#"><img src="start.png" class="start"></a>
-  </section>
-
+</head>
+<body>
+  <canvas id="myCanvas" width="770" height="812"></canvas>
 </body>
 </html>
