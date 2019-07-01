@@ -5,7 +5,7 @@ html, body{
 }
 
 /* なんか使えるやつ */
-.dbg-Border {
+.dbg-Border, .dbg-Border * {
   box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
   background-color: rgba(204, 204, 204, 0.025);
 }
@@ -42,6 +42,19 @@ html, body{
       font-size: 28px;
     }
 
+    .inputs {
+      padding: 0 100px;
+    }
+
+      .inputs-inner {
+        display: flex;
+      }
+     
+      .inputs-field 
+      {
+        display: flex;
+      }
+
   /* 手紙の大きい画像 */
   .tegami {
     width: 40%;
@@ -50,8 +63,54 @@ html, body{
 
   /* 情報入力コンテナー */
   .grid-Container {
-    display: grid;
+    width: 60%;
   }
+
+    /* 名前選択 */
+    .grid-top {
+      display: flex;
+    }
+    .input-label-name {
+      flex-basis: 4em; 
+      /* emは一文字分の幅 */
+      flex-shrink: 100; 
+    }
+    .input-text-name {
+      background-color: white;
+      font-size: 25px;
+    }
+
+    /* 性別と年齢 */
+    .inputs-field {
+      justify-content: space-between;
+      flex-grow: 60;
+    }
+
+      /* 性別 */
+      .grid-bottom-left {
+        flex-shrink: 100; 
+        flex-basis: 4em;
+        margin: 30px 0px 0px 0px; 
+      }
+
+      .select-sex {
+        font-size: 23px;
+        color: #707070;
+        background-color: white;
+      }
+
+      /* 年齢 */
+      .grid-bottom-light {
+        flex-basis: 4em; 
+        width: 200;
+        flex-shrink: 100; 
+        margin: 30px 0px 0px 0px;
+      }
+        
+        .nenrei {
+          font-size: 23px;
+          background-color: white;
+        }
 
     p{
       font-size: 25px;

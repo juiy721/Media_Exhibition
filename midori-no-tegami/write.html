@@ -9,7 +9,7 @@
   
   <title>みどりの手紙</title>
 </head>
-<body>
+<body class="dbg-Border">
   <div class="header">
       
     <!-- みどりの書簡のロゴ(仮) -->
@@ -28,46 +28,54 @@
 
   </div>
 
-  <!-- 大きい手紙の画像 -->
-  <img src="tegami.png" class="tegami">
-  
-  <!-- 情報入力コンテナー -->
-  <div class="grid-Container">
-  <form>
-    <p class="grid-top">
-      <label>
-        名前
-        <input 
-          type="text" 
-          name="namae" 
-          size="50" 
-          maxlength="8"
-        >
-      <label>
-    </p>
+  <div class="inputs">
+    <div class="inputs-inner">
+      <!-- 大きい手紙の画像 -->
+      <img src="tegami.png" class="tegami">
+      
+      <!-- 情報入力コンテナー -->
+      <div class="grid-Container">
+        <form>
+          <p class="grid-top">
+            <label class="input-label-name">名前</label>
+            <input 
+              class="input-text-name"
+              type="text" 
+              name="namae" 
+              size="30" 
+              maxlength="8"
+            >
+            
+          </p>
 
-    <p class="grid-bottom-left">
-      性別
-      <select name="sex">
-        <option value="male">男性</option>
-        <option value="female">女性</option>
-        <option value="other">その他</option>
-      </select>
-    </p>
+          <div class="inputs-field">
+            <p class="grid-bottom-left">
+              性別
+              <select name="sex" class="select-sex">
+                <option value="male">男性</option>
+                <option value="female">女性</option>
+                <option value="other">その他</option>
+              </select>
+            </p>
 
-    <p class="grid-bottom-light">
-      <label>年齢
-        <input 
-          type="number" 
-          name="number"
-          min="12"
-          max="100"
-          step="1"
-        >
-      </label>
-    </p>
-  </form>
+            <p class="grid-bottom-light">
+              <label>年齢
+                <input 
+                  class="nenrei"
+                  type="number" 
+                  name="number"
+                  min="12"
+                  max="100"
+                  step="1"
+                >
+              </label>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div class="inputs-inner">
   </div>
+
 
   <p class="tyuui">※手紙を選ぶ人には<a class="hutoji">一行目のみ</a>表示されます</p>
 
@@ -136,13 +144,10 @@
 
 
   <section>
-
     <!-- 便箋のキャンバスの大きさ -->
     <canvas id="myCanvas" width="770" height="812"></canvas>
-
     <!-- はじめるのボタン -->
     <a href="#"><img src="start.png" class="start"></a>
-
   </section>
 
 </body>
