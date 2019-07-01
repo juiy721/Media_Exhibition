@@ -12,12 +12,14 @@
 <body>
   <div class="header">
       
+    <!-- みどりの書簡のロゴ(仮) -->
     <h1 class="header-Heading">
         <a href="#">
           <img src="logo.png" class="midori">
         </a>
     </h1>
 
+    <!-- ヘッダーのリンク -->
     <ul class = "foo">
       <li><a href="#">サイトの使い方</a></li>
       <li><a href="#">手紙を書く</a></li>
@@ -26,6 +28,50 @@
 
   </div>
 
+  <!-- 大きい手紙の画像 -->
+  <img src="tegami.png" class="tegami">
+  
+  <!-- 情報入力コンテナー -->
+  <div class="grid-Container">
+  <form>
+    <p class="grid-top">
+      <label>
+        名前
+        <input 
+          type="text" 
+          name="namae" 
+          size="50" 
+          maxlength="8"
+        >
+      <label>
+    </p>
+
+    <p class="grid-bottom-left">
+      性別
+      <select name="sex">
+        <option value="male">男性</option>
+        <option value="female">女性</option>
+        <option value="other">その他</option>
+      </select>
+    </p>
+
+    <p class="grid-bottom-light">
+      <label>年齢
+        <input 
+          type="number" 
+          name="number"
+          min="12"
+          max="100"
+          step="1"
+        >
+      </label>
+    </p>
+  </form>
+  </div>
+
+  <p class="tyuui">※手紙を選ぶ人には<a class="hutoji">一行目のみ</a>表示されます</p>
+
+  <!-- 便箋のキャンバス -->
   <script>
     window.addEventListener("load", init);
 
@@ -86,10 +132,17 @@
       }
     }
   </script>
+  <!-- 便箋のキャンバス終了 -->
+
 
   <section>
+
+    <!-- 便箋のキャンバスの大きさ -->
     <canvas id="myCanvas" width="770" height="812"></canvas>
+
+    <!-- はじめるのボタン -->
     <a href="#"><img src="start.png" class="start"></a>
+
   </section>
 
 </body>
