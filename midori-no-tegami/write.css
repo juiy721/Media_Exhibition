@@ -42,75 +42,83 @@ html, body{
       font-size: 28px;
     }
 
-    .inputs {
-      padding: 0 100px;
-    }
-
-      .inputs-inner {
-        display: flex;
-      }
-     
-      .inputs-field 
-      {
-        display: flex;
-      }
-
-  /* 手紙の大きい画像 */
-  .tegami {
-    width: 40%;
-    height: 40%;
+  .inputs {
+    /* padding: 0 10px; */
   }
 
-  /* 情報入力コンテナー */
-  .grid-Container {
-    width: 60%;
-  }
-
-    /* 名前選択 */
-    .grid-top {
+    .inputs-inner {
       display: flex;
     }
-    .input-label-name {
-      flex-basis: 4em; 
-      /* emは一文字分の幅 */
-      flex-shrink: 100; 
-    }
-    .input-text-name {
-      background-color: white;
-      font-size: 25px;
-    }
 
-    /* 性別と年齢 */
-    .inputs-field {
-      justify-content: space-between;
-      flex-grow: 60;
-    }
-
-      /* 性別 */
-      .grid-bottom-left {
-        flex-shrink: 100; 
-        flex-basis: 4em;
-        margin: 30px 0px 0px 0px; 
+      /* 手紙の大きい画像 */
+      .tegami {
+        width: 40%;
+        height: 40%;
       }
 
-      .select-sex {
-        font-size: 23px;
-        color: #707070;
-        background-color: white;
+      /* 情報入力コンテナー */
+      .info-Container {
+        display:flex;
       }
 
-      /* 年齢 */
-      .grid-bottom-light {
-        flex-basis: 4em; 
-        width: 200;
-        flex-shrink: 100; 
-        margin: 30px 0px 0px 0px;
+      .info-box {
+        align-items: stretch;
       }
-        
-        .nenrei {
-          font-size: 23px;
-          background-color: white;
+
+          /* 名前選択 */
+          .info-name {
+            /* display: flex; */
+            margin: 10px 0px 10px 0px;
+          }
+          .info-name2 {
+            flex-basis: 4em; 
+            /* emは一文字分の幅 */
+            flex-shrink: 100; 
+          }
+          .info-name3 {
+            background-color: white;
+            font-size: 25px;
+          }
+
+        /* 性別と年齢 */
+        .info-field {
+          justify-content: space-between;
+          display: flex;
         }
+
+          /* 性別 */
+          .info-sex {
+            flex-shrink: 100; 
+            
+            margin: 10px 0px 10px 0px; 
+            flex-grow: 1;
+          }
+
+          .info-sex2{
+            /* flex-basis: 10em; */
+          }
+
+          .info-sex3 {
+            font-size: 23px;
+            color: #707070;
+            background-color: white;
+            margin-top: 10;
+          }
+
+          /* 年齢 */
+          .info-nenrei {
+            flex-basis: 4em; 
+            width: 200;
+            flex-shrink: 100; 
+            margin: 10px 0px 10px 0px;
+            flex-grow: 1;
+          }
+            
+            .info-nenrei2 {
+              font-size: 23px;
+              background-color: white;
+              flex-basis: 300px;
+            }
 
     p{
       font-size: 25px;
@@ -128,6 +136,23 @@ html, body{
     section {
       text-align: center;
     }
+
+  .center-line {
+    display: flex;
+  }
+
+  .write-icon {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .enpitu, .kesigomu, .modoru, .susumu{
+    width: 8%;
+    margin: 100;
+  }
+
 
   /* 便箋のキャンバス */
   #myCanvas {

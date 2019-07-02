@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!DOCTYPE html >
+<html lang="ja" class="dbg-Border">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +9,7 @@
   
   <title>みどりの手紙</title>
 </head>
-<body class="dbg-Border">
+<body>
   <div class="header">
       
     <!-- みどりの書簡のロゴ(仮) -->
@@ -34,42 +34,44 @@
       <img src="tegami.png" class="tegami">
       
       <!-- 情報入力コンテナー -->
-      <div class="grid-Container">
+      <div class="info-Container">
         <form>
-          <p class="grid-top">
-            <label class="input-label-name">名前</label>
-            <input 
-              class="input-text-name"
-              type="text" 
-              name="namae" 
-              size="30" 
-              maxlength="8"
-            >
-            
-          </p>
-
-          <div class="inputs-field">
-            <p class="grid-bottom-left">
-              性別
-              <select name="sex" class="select-sex">
-                <option value="male">男性</option>
-                <option value="female">女性</option>
-                <option value="other">その他</option>
-              </select>
+          <div class="info-box">
+            <p class="info-name">
+              <label class="info-name2">名前</label>
+              <input 
+                class="info-name3"
+                type="text" 
+                name="namae" 
+                size="30" 
+                maxlength="8"
+              >
+              
             </p>
 
-            <p class="grid-bottom-light">
-              <label>年齢
-                <input 
-                  class="nenrei"
-                  type="number" 
-                  name="number"
-                  min="12"
-                  max="100"
-                  step="1"
-                >
-              </label>
-            </p>
+            <div class="info-field">
+                <p class="info-sex">
+                  <a class="info-sex2">性別</a>
+                  <select name="sex" class="info-sex3">
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                    <option value="other">その他</option>
+                  </select>
+                </p>
+
+              <p class="info-nenrei">
+                <label>年齢
+                  <input 
+                    class="info-nenrei2"
+                    type="number" 
+                    name="number"
+                    min="12"
+                    max="100"
+                    step="1"
+                  >
+                </label>
+              </p>
+            </div>
           </div>
         </form>
       </div>
@@ -144,8 +146,17 @@
 
 
   <section>
-    <!-- 便箋のキャンバスの大きさ -->
-    <canvas id="myCanvas" width="770" height="812"></canvas>
+    <div class="center-line">
+      <div class="write-icon">
+        <img src="enpitu.png" class="enpitu">
+        <img src="kesigomu.png" class="kesigomu">
+        <img src="modoru.png" class="modoru">
+        <img src="susumu.png" class="susumu">
+      </div>
+      <!-- 便箋のキャンバスの大きさ -->
+      <canvas id="myCanvas" width="770" height="812"></canvas>
+    </div>
+
     <!-- はじめるのボタン -->
     <a href="#"><img src="start.png" class="start"></a>
   </section>
