@@ -62,12 +62,6 @@ html, body{
         margin-top: 50px;
         margin-left: 100px;
       }
-
-      .info-container-from {
-        background-color: #D8E58D;
-        margin-bottom: 60px;
-      }
-
       .info-box {
         align-items: stretch;
         border: solid 3px #65AC69;
@@ -76,7 +70,8 @@ html, body{
           /* 名前選択 */
           .info-name {
             display: flex;
-            margin: 10px 0px;
+            padding: 10px 0px;
+            background-color: #D8E58D;
           }
           .info-name2 {
             /* flex-basis: 4em;  */
