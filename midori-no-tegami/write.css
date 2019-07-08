@@ -178,8 +178,7 @@ html, body{
   }
 
     /* はじめるのボタン */
-    .start {
-      width: 30%;
-      height: 30%;
+    .send {
+      width: 20%;
       margin: 20px 0px 30px 120px;
     }
