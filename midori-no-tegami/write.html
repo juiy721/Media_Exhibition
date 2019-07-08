@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="ress.min.css">
   <link rel="stylesheet" type="text/css" href="write.css">
   <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   
   <title>みどりの手紙</title>
 </head>
-<body class="dbg-Border">
+<body>
   <div class="header">
       
     <!-- みどりの書簡のロゴ(仮) -->
@@ -34,42 +35,43 @@
       <img src="tegami.png" class="tegami">
       
       <!-- 情報入力コンテナー -->
-      <div class="grid-Container">
-        <form>
-          <p class="grid-top">
-            <label class="input-label-name">名前</label>
-            <input 
-              class="input-text-name"
-              type="text" 
-              name="namae" 
-              size="30" 
-              maxlength="8"
-            >
-            
-          </p>
-
-          <div class="inputs-field">
-            <p class="grid-bottom-left">
-              性別
-              <select name="sex" class="select-sex">
-                <option value="male">男性</option>
-                <option value="female">女性</option>
-                <option value="other">その他</option>
-              </select>
+      <div class="info-Container">
+        <form class="info-container-from">
+          <div class="info-box">
+            <p class="info-name">
+              <label class="info-name2">名前</label>
+              <input 
+                class="info-name3"
+                type="text" 
+                name="name" 
+                size="30" 
+                maxlength="8"
+              >
+              
             </p>
 
-            <p class="grid-bottom-light">
-              <label>年齢
-                <input 
-                  class="nenrei"
-                  type="number" 
-                  name="number"
-                  min="12"
-                  max="100"
-                  step="1"
-                >
-              </label>
-            </p>
+            <div class="info-field">
+                <p class="info-sex">
+                  <span class="info-sex2">性別</span>
+                  <select name="sex" class="info-sex3">
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                    <option value="other">その他</option>
+                  </select>
+                </p>
+
+              <p class="info-nenrei">
+                <label class="info-nenrei-label">年齢</label>
+                  <input 
+                    class="info-nenrei2"
+                    type="number" 
+                    name="number"
+                    min="12"
+                    max="100"
+                    step="1"
+                  >
+              </p>
+            </div>
           </div>
         </form>
       </div>
@@ -144,8 +146,24 @@
 
 
   <section>
-    <!-- 便箋のキャンバスの大きさ -->
-    <canvas id="myCanvas" width="770" height="812"></canvas>
+    <div class="center-line">
+      <div class="write-icons">
+        <img src="enpitu.png" class="write-icon enpitu" alt="鉛筆のアイコン"> 
+        <img src="kesigomu.png" class="write-icon kesigomu" alt="消しゴムのアイコン">
+        <img src="modoru.png" class="write-icon modoru" alt="戻る">
+        <img src="susumu.png" class="write-icon susumu" alt="進む">
+        <!-- altは名前が出る -->
+      </div>
+      <!-- 便箋のキャンバスの大きさ -->
+      <canvas 
+        id="myCanvas" 
+        width="770" 
+        height="812" 
+        class="canvas"
+      >
+      </canvas>
+    </div>
+
     <!-- はじめるのボタン -->
     <a href="#"><img src="start.png" class="start"></a>
   </section>
