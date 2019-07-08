@@ -54,15 +54,27 @@ ul.foo li {
     height: 30%;
     margin: 20px 0px 30px 0px;
   }
+
+.how-to-site {
+  margin: 100px 0px;
+  font-size: 30pt;
+}
 .write-box {
   height: 100%;
   background: rgba(255,255,255,0.8);
   margin: 0px 300px 0px 300px;
 }
 
-.mokuji, .kakikata, .erabikata, .ru-ru {
-  font-size: 33pt;
+.text-box-input {
+  font-size: 30pt;
 }
-  
-  
-  
+
+.left-aligned {
+  text-align: left;
+  margin: 100px 200px 50px 200px;
+  background-color: white;
+}
+
+.how-to-write-inputs {
+  padding: 100px 100px 100px 100px;
+}
