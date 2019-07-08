@@ -27,6 +27,8 @@ p{
 .header-Heading {
   width: 350px;
   height: 70px;
+  text-align: center;
+  margin: 21.44px 0px;
 }
 
 ul.foo {
@@ -52,10 +54,10 @@ ul.foo li {
     height: 30%;
     margin: 20px 0px 30px 0px;
   }
-.white-box {
+.write-box {
   height: 100%;
   background: rgba(255,255,255,0.8);
-
+  margin: 0px 300px 0px 300px;
 }
 
 .mokuji, .kakikata, .erabikata, .ru-ru {
