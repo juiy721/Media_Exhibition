@@ -9,59 +9,27 @@
 	],
 "creatorBuild": "29156",
 "files": {
-	"/choose-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/binsen.png": {
+		"ft": 32768,
+		"iS": 34701,
 		"oA": 0,
-		"oAP": "/choose-min-min.css",
+		"oAP": "/binsen.png",
 		"oF": 0,
-		"oS": 3
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"/choose.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"/enpitu.png": {
+		"ft": 32768,
+		"iS": 14395,
 		"oA": 0,
-		"oAP": "/choose-min.css",
+		"oAP": "/enpitu.png",
 		"oF": 0,
-		"oS": 3
-		},
-	"/choose.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/choose.html",
-		"oF": 0
-		},
-	"/choose2.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/choose2-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/choose2.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/choose2.html",
-		"oF": 0
-		},
-	"/chooseのコピー.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/chooseのコピー.html",
-		"oF": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/home.css": {
 		"aP": 1,
@@ -81,16 +49,23 @@
 		"oAP": "/home.html",
 		"oF": 0
 		},
-	"/home.js": {
-		"bF": 0,
-		"ft": 64,
+	"/HowToUse_WebSite.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
 		"ma": 0,
-		"mi": 1,
 		"oA": 0,
-		"oAP": "/home-min.js",
+		"oAP": "/HowToUse_WebSite-min.css",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oS": 3
+		},
+	"/HowToUse_WebSite.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/HowToUse_WebSite.html",
+		"oF": 0
 		},
 	"/img_1.png": {
 		"ft": 32768,
@@ -114,15 +89,100 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/write-min.css": {
+	"/kesigomu.png": {
+		"ft": 32768,
+		"iS": 9650,
+		"oA": 0,
+		"oAP": "/kesigomu.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/logo.png": {
+		"ft": 32768,
+		"iS": 21051,
+		"oA": 0,
+		"oAP": "/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/modoru.png": {
+		"ft": 32768,
+		"iS": 12076,
+		"oA": 0,
+		"oAP": "/modoru.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/start.png": {
+		"ft": 32768,
+		"iS": 10528,
+		"oA": 0,
+		"oAP": "/start.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/susumu.png": {
+		"ft": 32768,
+		"iS": 12223,
+		"oA": 0,
+		"oAP": "/susumu.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/tegami.png": {
+		"ft": 32768,
+		"iS": 4485,
+		"oA": 0,
+		"oAP": "/tegami.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/tegami_yama.png": {
+		"ft": 32768,
+		"iS": 163501,
+		"oA": 0,
+		"oAP": "/tegami_yama.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/test1.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/write-min-min.css",
+		"oAP": "/test1-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"/test1.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/test1.html",
+		"oF": 0
 		},
 	"/write.css": {
 		"aP": 1,
@@ -141,17 +201,6 @@
 		"oA": 0,
 		"oAP": "/write.html",
 		"oF": 0
-		},
-	"/write.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/write-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
 		}
 	},
 "hooks": [

@@ -1,19 +1,19 @@
-html, body{
-    background-color: #EDFFDB;
-    text-align: center;
-    margin: 0;
-    color: #707070;
-    background-image: url("tegami-yama.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: right bottom
-    background-size: 100%;
+html,body{ 
+  text-align: center;
+  color: #707070; 
+  margin: 0;
+  background-color: #EDFFDB;
+  background-image: url("tegami_yama.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: 100%;
 }
 
 p{
   font-size: 25px;
 }
-.dbg-Border {
+.dbg-Border , .dbg-Border * {
   box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
   background-color: rgba(204, 204, 204, 0.025);
 }
@@ -52,9 +52,15 @@ ul.foo li {
     height: 30%;
     margin: 20px 0px 30px 0px;
   }
+.white-box {
+  height: 100%;
+  background: rgba(255,255,255,0.8);
 
+}
 
-  
+.mokuji, .kakikata, .erabikata, .ru-ru {
+  font-size: 33pt;
+}
   
   
   
