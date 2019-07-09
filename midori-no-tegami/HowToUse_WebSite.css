@@ -1,3 +1,8 @@
+.dbg-Border , .dbg-Border * {
+  box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
+  /* background-color: rgba(27, 9, 9, 0.025); */
+}
+
 html,body{ 
   text-align: center;
   color: #707070; 
@@ -11,12 +16,27 @@ html,body{
 }
 
 p{
-  font-size: 25px;
+  font-size: 30px;
+  margin-bottom: 2em;
 }
-.dbg-Border , .dbg-Border * {
-  box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
-  background-color: rgba(204, 204, 204, 0.025);
-}
+
+  /* これを使うと全角スペース1つ分の空白が作れる */
+  .big-blank {
+    padding-left: 1em;
+  }
+  /* 一番下の行の余計な空白を消す */
+  .no-blank {
+    margin-bottom: 0px;
+  }
+
+  .small-interval {
+    margin-bottom: 10px;
+  }
+
+  .small-title {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
 
 .header {
   background-color: white;
@@ -49,11 +69,6 @@ ul.foo li {
     /* width: 100%; */
     height: 100%;
    }
-  .start {
-    width: 30%;
-    height: 30%;
-    margin: 20px 0px 30px 0px;
-  }
 
 .how-to-site {
   margin: 100px 0px;
@@ -61,20 +76,31 @@ ul.foo li {
 }
 .write-box {
   height: 100%;
-  background: rgba(255,255,255,0.8);
-  margin: 0px 300px 0px 300px;
+  background: rgba(255,255,255,0.85);
+  margin: 0px 250px;
+  padding: 50px 50px;
 }
 
 .text-box-input {
+  font-size: 30pt;
+  margin: 25px 0px;
+}
+
+.contents {
+  margin-bottom: 70px;
+}
+
+.title1 {
+  margin: 500px 0px 100px 0px;
   font-size: 30pt;
 }
 
 .left-aligned {
   text-align: left;
-  margin: 100px 200px 50px 200px;
-  background-color: white;
+  margin: 100px 120px 30px 120px;
+  background-color: rgba(255,255,255,0.85);
 }
 
 .how-to-write-inputs {
-  padding: 100px 100px 100px 100px;
+  padding: 200px 150px;
 }
