@@ -34,13 +34,16 @@ p{
 
   .small-title {
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 38px;
   }
 
 .header {
   background-color: white;
   display: flex;
   justify-content: space-around;
+  width: 100%;
+  position: fixed;
+  top: 0;
 }
 
 .header-Heading {
@@ -71,12 +74,13 @@ ul.foo li {
 
 /* もくじ */
 .how-to-site {
-  margin: 100px 0px;
-  font-size: 30pt;
+  margin: 200px 0px 100px 0px;
+  font-size: 40pt;
 }
   .write-box {
     height: 100%;
     background: rgba(255,255,255,0.85);
+    border: 3px solid rgba(0,0,0,0.25);
     margin: 0px 250px;
     padding: 50px 50px;
   }
@@ -96,12 +100,13 @@ ul.foo li {
   text-align: left;
   margin: 50px 120px 30px 120px;
   background-color: rgba(255,255,255,0.85);
+  border: 3px solid rgba(0,0,0,0.25);
 }
 
 /* 手紙の書き方 */
 .title1 {
   margin: 500px 0px 0px 0px;
-  font-size: 30pt;
+  font-size: 40pt;
 }
 
 .how-to-write-inputs {
@@ -111,7 +116,7 @@ ul.foo li {
 /* 手紙の選び方・送り方、ルールのタイトル */
 .title2, .title3 {
   margin: 300px 0px 0px 0px;
-  font-size: 30pt;
+  font-size: 40pt;
 }
 
 /* 手紙の選び方・送り方の背景調整 */
