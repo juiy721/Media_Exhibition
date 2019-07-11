@@ -3,15 +3,16 @@ html, body{
     text-align: center;
     margin: 0;
     color: #707070;
+    font-family: 'Sawarabi Mincho', sans-serif;
 }
 
 p{
   font-size: 25px;
 }
-.dbg-Border {
+/* .dbg-Border {
   box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
   background-color: rgba(204, 204, 204, 0.025);
-}
+} */
 
 .header {
   background-color: white;
