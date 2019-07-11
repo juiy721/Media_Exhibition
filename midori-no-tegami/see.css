@@ -1,6 +1,6 @@
-.dbg-Border , .dbg-Border * {
+/* .dbg-Border , .dbg-Border * {
     box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
-  }
+  } */
   
   html,body{ 
     text-align: center;
@@ -41,3 +41,82 @@
       /* width: 100%; */
       height: 100%;
      }
+.side_by_side {
+  display: flex;
+}
+
+/* 画像 */
+.hello {
+  width: 70%;
+  padding: 50px 0px 50px 50px;
+}
+.copy {
+  width: 33%;
+  height: 33%;
+  padding: 30px 50px 30px 0px;
+}
+.print {
+  width: 53%;
+  height: 53%;
+  padding: 30px 100px 30px 70px;
+}
+.tegami {
+  width: 10%;
+  height: 10%;
+  background-color: white;
+  padding-bottom: 335px;
+}
+.return {
+  width: 15%;
+  padding-top: 20px;
+}
+
+/* 全角スペース1つ分 */
+.double-space {
+  padding-left: 1em;
+}
+
+/* 他の全角スペース */
+.space1 {
+  padding-left: 5em;
+}
+.space2 {
+  padding-left: 2em;
+}
+.space3 {
+  padding-left: 3em;
+}
+
+/* 背景の色 */
+.green1 {
+  background-color: #D8E58D;
+}
+.green2 {
+  background-color: #EAF2D1;
+}
+
+/* 上の画面 */
+.up-inputs {
+  margin: 50px 40px;
+  font-size: 30pt;
+  border: solid 3px #65AC69;
+  padding: 6px 0px;
+  text-align: left;
+}
+
+/* 下の画面 */
+.down-inputs {
+  font-size: 17pt;
+  margin: 10px 40px;
+  padding: 50px 10px 30px 130px;
+  background-color: #EAF2D1;
+  border: solid 3px #65AC69;
+  text-align: left;
+}
+  .small-title {
+    font-size: 25pt;
+    padding-bottom: 5px;
+  }
+    .text {
+      padding-bottom: 3px;
+    }
