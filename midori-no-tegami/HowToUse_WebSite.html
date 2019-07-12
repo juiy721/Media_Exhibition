@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-    <head>
+    <head id=index>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,6 +9,7 @@
       <link rel="stylesheet" type="text/css" href="ress.min.css">
       <link rel="stylesheet" type="text/css" href="HowToUse_WebSite.css">
       <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+  
       <title>みどりの手紙</title>
     </head>
     <body class="dbg-Border">
@@ -27,7 +28,7 @@
       </div><!--/header-->
     
     <!-- もくじ -->
-    <p class="how-to-site" id="index">サイトの使い方</p>
+    <p class="how-to-site">サイトの使い方</p>
     <div class="write-box">
       <div class="text-box">
         <p class="text-box-input contents">もくじ</p>
@@ -37,7 +38,7 @@
         <p class="text-box-input choose-send">
           <a href="#2">手紙の選び方・送り方</a>
         </p>
-        <p class="text-box-input rule">
+        <p class="text-box-input rule" id="1">
           <a href="#3">ルール</a>
         </p>
       </div>
@@ -46,24 +47,24 @@
 
     <!-- ＃リンクのスムーズスクロール -->
     <script>
-        $(function(){
-          // #で始まるリンクをクリックしたら実行されます
-          $('a[href^="#"]').click(function() {
-            // スクロールの速度
-            var speed = 400; // ミリ秒で記述
-            var href= $(this).attr("href");
-            var target = $(href == "#" || href == "" ? 'html' : href);
-            var position = target.offset().top;
-            $('body,html').animate({scrollTop:position}, speed, 'swing');
-            return false;
-          });
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
         });
+      });
     </script>
-    
+
     <!-- 手紙の書き方 -->
-    <p class="title1" id="1">手紙の書き方</p>
+    <p class="title1">手紙の書き方</p>
     <div class="left-aligned how-to-write-inputs">
-      <p>①<a href="#">手紙を書く</a>をクリックします。</p>
+      <p>①<a href="write.html">手紙を書く</a>をクリックします。</p>
       <p>②手書き入力で手紙を書きます。</p>
       <div>
         <p class="small-interval">③名前、性別、年齢などの情報を</p>
@@ -77,13 +78,14 @@
     </div>
     <a href="#index">
       <img src="return-to-contents.png" 
-           alt="もくじに戻る">
+           alt="もくじに戻る"
+           id="2">
     </a>
     <!-- 手紙の書き方終了 -->
 
     <!-- 手紙の選び方・送り方 -->
     <div>
-      <p class="title2" id="2">手紙の選び方・送り方</p>
+      <p class="title2">手紙の選び方・送り方</p>
       <div class="left-aligned how-to-choose-send-inputs">
         <p>①手紙を選ぶをクリックします。</p>
         <div>
@@ -109,12 +111,13 @@
     </div>
     <a href="#index">
       <img src="return-to-contents.png" 
-           alt="もくじに戻る">
+           alt="もくじに戻る"
+           id="3">
     </a>
     <!-- 手紙の選び方・送り方終了 -->
 
     <!-- ルール -->
-    <p class="title3" id="3">ルール</p>
+    <p class="title3">ルール</p>
     <div class="left-aligned rule-inputs">
       <div>
         <p class="small-title">①基本的なこと</p>
