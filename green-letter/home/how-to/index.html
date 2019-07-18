@@ -7,31 +7,37 @@
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="ress.min.css">
-      <link rel="stylesheet" type="text/css" href="HowToUse_WebSite.css">
+      <link rel="stylesheet" type="text/css" href="index.css">
       <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
   
-      <title>みどりの手紙</title>
+      <title>みどりの書簡</title>
     </head>
     <body class="dbg-Border">
         
       <div class="header">
           <h1 class="header-Heading">
-            <a href="home.html">
-              <img src="logo.png" class="midori">
+            <a href="./../index.html">
+              <img src="img/header/logo.png" class="midori">
             </a>
           </h1>
-        <ul class = "foo">
-          <li><a href="HowToUse_WebSite.html">サイトの使い方</a></li>
-          <li><a href="write.html">手紙を書く</a></li>
-          <li><a href="choose.html">手紙を選ぶ</a></li>
-        </ul>
+        <div class = "top-icon-inputs">
+          <a>
+            <img src="img/header/how-to.png" class="top-icon">
+          </a>
+          <a href="write/index.html">
+            <img src="img/header/write.png" class="top-icon">
+          </a>
+          <a href="write/choose/index.html">
+            <img src="img/header/choose.png" class="top-icon">
+          </a>
+        </div>
       </div><!--/header-->
     
     <!-- もくじ -->
     <p class="how-to-site" id=index>サイトの使い方</p>
     <div class="write-box">
       <div class="text-box">
-        <p class="text-box-input contents">もくじ</p>
+        <p class="contents">もくじ</p>
         <p class="text-box-input write">
           <a href="#1">手紙の書き方</a>
         </p>
@@ -54,7 +60,7 @@
           var speed = 400; // ミリ秒で記述
           var href= $(this).attr("href");
           var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top - 170 ;
+          var position = target.offset().top - 100 ;
           $('body,html').animate({scrollTop:position}, speed, 'swing');
           return false;
         });
@@ -64,7 +70,7 @@
     <!-- 手紙の書き方 -->
     <p class="title1" id="1">手紙の書き方</p>
     <div class="left-aligned how-to-write-inputs">
-      <p>①<a href="write.html">手紙を書く</a>をクリックします。</p>
+      <p>①<a href="write/index.html">手紙を書く</a>をクリックします。</p>
       <p>②手書き入力で手紙を書きます。</p>
       <div>
         <p class="small-interval">③名前、性別、年齢などの情報を</p>
@@ -72,13 +78,17 @@
       </div>
       <p>④送信します。</p>
       <div>
-        <p class="small-interval">⑤<a href="choose.html">手紙を選ぶ</a>ページの一番上に</p>
+        <p class="small-interval">
+          ⑤<a href="write/choose/index.html">手紙を選ぶ</a>
+          ページの一番上に
+        </p>
         <p class="big-blank no-blank">あなたの手紙が表示されます。</p>
       </div>
     </div>
     <a href="#index">
-      <img src="return-to-contents.png" 
-           alt="もくじに戻る">
+      <img src="img/return-to-contents.png" 
+           alt="もくじに戻る"
+           class="return-to-contents">
     </a>
     <!-- 手紙の書き方終了 -->
 
@@ -109,8 +119,9 @@
       </div>
     </div>
     <a href="#index">
-      <img src="return-to-contents.png" 
-           alt="もくじに戻る">
+      <img src="img/return-to-contents.png" 
+           alt="もくじに戻る"
+           class="return-to-contents">
     </a>
     <!-- 手紙の選び方・送り方終了 -->
 
@@ -139,9 +150,9 @@
       </div>
     </div>
     <a href="#index">
-      <img src="return-to-contents.png" 
+      <img src="img/return-to-contents.png" 
            alt="もくじに戻る"
-           class="rule-contents">
+           class="rule-contents return-to-contents">
     </a>
     <!-- ルール終了 -->
 

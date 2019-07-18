@@ -5,34 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" type="text/css" href="ress.min.css">
-  <link rel="stylesheet" type="text/css" href="write.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
   <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
-  <title>みどりの手紙</title>
+  <title>みどりの書簡</title>
 </head>
 <body>
   <div class="header">
       
-    <!-- みどりの書簡のロゴ(仮) -->
+    <!-- みどりの書簡のロゴ -->
     <h1 class="header-Heading">
-        <a href="home.html">
-          <img src="logo.png" class="midori">
+        <a href="./../../index.html">
+          <img src="img/header/logo.png" class="midori">
         </a>
     </h1>
 
     <!-- ヘッダーのリンク -->
-    <ul class = "foo">
-      <li><a href="HowToUse_WebSite.html">サイトの使い方</a></li>
-      <li><a href="write.html">手紙を書く</a></li>
-      <li><a href="choose.html">手紙を選ぶ</a></li>
-    </ul>
+    <div class = "top-icon-inputs">
+        <a href="./../index.html">
+          <img src="img/header/how-to.png" class="top-icon">
+        </a>
+        <a>
+          <img src="img/header/write.png" class="top-icon">
+        </a>
+        <a href="choose/index.html">
+          <img src="img/header/choose.png" class="top-icon">
+        </a>
+    </div>
 
   </div>
 
   <div class="inputs">
     <div class="inputs-inner">
       <!-- 大きい手紙の画像 -->
-      <img src="tegami.png" class="tegami">
+      <img src="img/tegami.png" class="tegami">
       
       <!-- 情報入力コンテナー -->
       <div class="info-Container">
@@ -90,9 +96,9 @@
       // Stageオブジェクトを作成。表示リストのルートになります。
       var stage = new createjs.Stage("myCanvas");
 
-      var bmp = new createjs.Bitmap("binsen.png");
-      bmp.scaleX = 0.3; // 画像の幅
-      bmp.scaleY = 0.3; // 画像の高さ
+      var bmp = new createjs.Bitmap("img/binsen.png");
+      bmp.scaleX = 0.19; // 画像の幅
+      bmp.scaleY = 0.19; // 画像の高さ
       stage.addChild(bmp);
 
       // タッチイベントが有効なブラウザの場合、
@@ -148,24 +154,24 @@
   <section>
     <div class="center-line">
       <div class="write-icons">
-        <img src="enpitu.png" class="write-icon enpitu" alt="鉛筆のアイコン"> 
-        <img src="kesigomu.png" class="write-icon kesigomu" alt="消しゴムのアイコン">
-        <img src="modoru.png" class="write-icon modoru" alt="戻る">
-        <img src="susumu.png" class="write-icon susumu" alt="進む">
+        <img src="img/enpitu.png" class="write-icon enpitu" alt="鉛筆のアイコン"> 
+        <img src="img/kesigomu.png" class="write-icon kesigomu" alt="消しゴムのアイコン">
+        <img src="img/modoru.png" class="write-icon modoru" alt="戻る">
+        <img src="img/susumu.png" class="write-icon susumu" alt="進む">
         <!-- altは名前が出る -->
       </div>
       <!-- 便箋のキャンバスの大きさ -->
       <canvas 
         id="myCanvas" 
-        width="770" 
-        height="812" 
+        width="492" 
+        height="516" 
         class="canvas"
       >
       </canvas>
     </div>
 
     <!-- 送るのボタン -->
-    <a href="#"><img src="send.png" class="send"></a>
+    <a href="#"><img src="img/send.png" class="send"></a>
   </section>
 
 </body>
