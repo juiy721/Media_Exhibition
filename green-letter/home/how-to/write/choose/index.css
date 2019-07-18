@@ -1,14 +1,14 @@
 /* .dbg-Border , .dbg-Border * {
-  box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
-} */
-
-html, body{
-    background-color: #EDFFDB;
+    box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
+  } */
+  
+  html,body{ 
     text-align: center;
+    color: #707070; 
     margin: 0;
-    color: #707070;
-    font-family: "Sawarabi Mincho";
-}
+    background-color: #EDFFDB;
+    font-family: 'Sawarabi Mincho', sans-serif;
+  }
 
 /* ヘッダー */
 .header {
@@ -33,33 +33,16 @@ html, body{
       margin: 17px 10px 0px 10px;
     }
 /* ヘッダー終了 */
-    
 
-p{
-  font-size: 20px;
-  margin: 3px 0px;
+.green-frame {
+    width: 98%;
+    padding:5px;
 }
-
-/* 画像 */
-.img_ipad {
-    width: 100%;
-  }
-.start {
-  width: 27%;
-  /* height: 25%; */
-  margin: 0px 0px 30px 0px;
+.frame1 {
+  margin-top: 10px;
 }
 
-.space1 {
-  margin: 20px 0px 40px 0px;
+.watch {
+    font-size: 20pt;
+    padding: 30px 0px;
 }
-.space2 {
-  margin-bottom: 50px;
-}
-.space3 {
-  margin: 50px 0px;
-}
-  
-  
-  
-  
