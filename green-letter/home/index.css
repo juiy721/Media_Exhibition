@@ -1,0 +1,64 @@
+/* .dbg-Border , .dbg-Border * {
+  box-shadow: rgb(0, 0, 0) 0 0 0 1px inset;
+} */
+
+html, body{
+    background-color: #EDFFDB;
+    text-align: center;
+    margin: 0;
+    color: #707070;
+    font-family: "Sawarabi Mincho";
+}
+
+/* ヘッダー */
+.header {
+  background-color: white;
+  display: flex;
+}
+  .header-Heading {
+    width: 350px;
+    height: 55px;
+    margin: 10px 10px 10px 50px;
+  }
+    /* みどりの書簡のロゴ */
+    .midori {
+      height: 100%;
+    }
+  .top-icon-inputs {
+    display: flex;
+    margin: 0px 20px;
+  }
+    .top-icon {
+      width: 98%;
+      margin: 17px 10px 0px 10px;
+    }
+    
+
+p{
+  font-size: 20px;
+  margin: 3px 0px;
+}
+
+/* 画像 */
+.img_ipad {
+    width: 100%;
+  }
+.start {
+  width: 27%;
+  /* height: 25%; */
+  margin: 0px 0px 30px 0px;
+}
+
+.space1 {
+  margin: 20px 0px 40px 0px;
+}
+.space2 {
+  margin-bottom: 50px;
+}
+.space3 {
+  margin: 50px 0px;
+}
+  
+  
+  
+  
