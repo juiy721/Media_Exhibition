@@ -85,7 +85,10 @@
   </div>
 
 
-  <p class="tyuui">※手紙を選ぶ人には<a class="hutoji">一行目のみ</a>表示されます</p>
+  <p class="tyuui">※手紙を選ぶ人には
+    <a class="bold">一行目のみ</a>
+    表示されます
+  </p>
 
   <!-- 便箋のキャンバス -->
   <script>
@@ -97,8 +100,8 @@
       var stage = new createjs.Stage("myCanvas");
 
       var bmp = new createjs.Bitmap("img/binsen.png");
-      bmp.scaleX = 0.20; // 画像の幅
-      bmp.scaleY = 0.20; // 画像の高さ
+      bmp.scaleX = 0.22; // 画像の幅
+      bmp.scaleY = 0.22; // 画像の高さ
       stage.addChild(bmp);
 
       // タッチイベントが有効なブラウザの場合、
@@ -154,17 +157,29 @@
   <section>
     <div class="center-line">
       <div class="write-icons">
-        <img src="img/enpitu.png" class="write-icon enpitu" alt="鉛筆のアイコン"> 
-        <img src="img/kesigomu.png" class="write-icon kesigomu" alt="消しゴムのアイコン">
-        <img src="img/modoru.png" class="write-icon modoru" alt="戻る">
-        <img src="img/susumu.png" class="write-icon susumu" alt="進む">
+
+        <img src="img/enpitu.png" 
+             class="write-icon enpitu" 
+             alt="鉛筆のアイコン"> 
+
+        <img src="img/kesigomu.png" 
+             class="write-icon kesigomu" 
+             alt="消しゴムのアイコン">
+
+        <img src="img/modoru.png" 
+             class="write-icon modoru" 
+             alt="戻る">
+
+        <img src="img/susumu.png" 
+             class="write-icon susumu" 
+             alt="進む">
         <!-- altは名前が出る -->
       </div>
       <!-- 便箋のキャンバスの大きさ -->
       <canvas 
         id="myCanvas" 
-        width="518" 
-        height="541" 
+        width="565" 
+        height="600" 
         class="canvas"
       >
       </canvas>
