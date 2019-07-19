@@ -10,37 +10,34 @@
     font-family: 'Sawarabi Mincho', sans-serif;
   }
 
-  .header {
-    background-color: white;
-    display: flex;
-    justify-content: space-around;
-  }
-  
+  /* ヘッダー */
+.header {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
   .header-Heading {
     width: 350px;
-    height: 70px;
-    text-align: center;
-    margin: 21.44px 0px;
+    height: 55px;
+    margin: 10px 10px 10px 50px;
   }
-  
-  ul.foo {
-      justify-content: space-around;
-      padding: 0;
-      height: 56px;
-      margin-top:30px;
-      margin-bottom:30px;
-    }
-    
-  ul.foo li {
-      width: 200px;
-      display: inline-block;
-      font-size: 28px;
-    }
-  
-  .midori {
-      /* width: 100%; */
+    /* みどりの書簡のロゴ */
+    .midori {
       height: 100%;
-     }
+    }
+  .top-icon-inputs {
+    display: flex;
+    margin: 0px 20px;
+  }
+    .top-icon {
+      width: 98%;
+      margin: 17px 10px 0px 10px;
+    }
+/* ヘッダー終了 */
+
+
 .side_by_side {
   display: flex;
 }
@@ -48,27 +45,27 @@
 /* 画像 */
 .hello {
   width: 70%;
-  padding: 50px 0px 50px 50px;
+  padding: 20px 0px 45px 60px;
 }
 .copy {
-  width: 33%;
-  height: 33%;
-  padding: 30px 50px 30px 0px;
+  width: 28%;
+  height: 28%;
+  padding: 20px 30px 20px 0px;
 }
 .print {
-  width: 53%;
-  height: 53%;
-  padding: 30px 100px 30px 70px;
+  width: 31%;
+  height: 31%;
+  padding: 25px 0px 20px 20px;
 }
 .tegami {
   width: 10%;
   height: 10%;
   background-color: white;
-  padding-bottom: 335px;
+  padding-bottom: 207px;
 }
 .return {
-  width: 15%;
-  padding-top: 20px;
+  width: 17%;
+  margin-top: 10px;
 }
 
 /* 全角スペース1つ分 */
@@ -97,25 +94,25 @@
 
 /* 上の画面 */
 .up-inputs {
-  margin: 50px 40px;
-  font-size: 30pt;
-  border: solid 3px #65AC69;
+  margin: 100px 40px 20px 40px;
+  font-size: 25px;
+  border: solid 1px #65AC69;
   padding: 0px 0px;
   text-align: left;
 }
 
 /* 下の画面 */
 .down-inputs {
-  font-size: 17pt;
+  font-size: 13px;
   margin: 10px 40px;
-  padding: 50px 10px 30px 130px;
+  padding: 15px 10px 15px 150px;
   background-color: #EAF2D1;
-  border: solid 3px #65AC69;
+  border: solid 1px #65AC69;
   text-align: left;
 }
   .small-title {
-    font-size: 25pt;
-    padding-bottom: 5px;
+    font-size: 21px;
+    padding-bottom: 8px;
   }
     .text {
       padding-bottom: 3px;
