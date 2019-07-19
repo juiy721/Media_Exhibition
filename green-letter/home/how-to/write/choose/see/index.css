@@ -44,24 +44,24 @@
 
 /* 画像 */
 .hello {
-  width: 70%;
-  padding: 20px 0px 45px 60px;
+  width: 65%;
+  padding: 40px 0px 55px 60px;
 }
 .copy {
-  width: 28%;
-  height: 28%;
-  padding: 20px 30px 20px 0px;
+  width: 36%;
+  height: 36%;
+  padding: 25px 30px 25px 0px;
 }
 .print {
-  width: 31%;
-  height: 31%;
-  padding: 25px 0px 20px 20px;
+  width: 41%;
+  height: 41%;
+  padding: 27px 0px 25px 20px;
 }
 .tegami {
   width: 10%;
   height: 10%;
   background-color: white;
-  padding-bottom: 207px;
+  padding-bottom: 254px;
 }
 .return {
   width: 17%;
@@ -103,9 +103,9 @@
 
 /* 下の画面 */
 .down-inputs {
-  font-size: 13px;
-  margin: 10px 40px;
-  padding: 15px 10px 15px 150px;
+  font-size: 15px;
+  margin: 40px 40px 10px 40px;
+  padding: 21px 10px 21px 140px;
   background-color: #EAF2D1;
   border: solid 1px #65AC69;
   text-align: left;

@@ -51,7 +51,11 @@ html, body{
       /* 情報入力コンテナー */
       .info-Container {
         display:flex;
-        margin: 20px 100px 0px 50px;
+        margin: 25px 100px 0px 20px;
+        width: 372px; /* 好きな大きさを指定する */
+      }
+      .info-container-from {
+        width: 100%; /* 追加 */
       }
       .info-box {
         /* align-items: stretch; */
@@ -66,11 +70,15 @@ html, body{
           }
           .info-name2 {
             padding: 0 0.5em;
+            width: 14%;
+            flex-basis: 14%
           }
           .info-name3 {
             background-color: white;
             font-size: 15px;
             margin-right: 1em;
+            width: 100%;
+            flex-basis: 100%;
           }
 
         /* 性別と年齢 */
@@ -147,24 +155,25 @@ html, body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 45px;
   }
 
   .write-icon {
-    width: 40px;
-    height: 40px;
-    margin: 0px 20px 20px 20px;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
   }
 
 
   /* 便箋のキャンバス */
   #myCanvas {
     position: relative;
-    top: 500;
-    left: 500;
+    top: 0;
+    left: 0;
   }
 
   .canvas {
-    margin-right: 10px;
+    margin-right: -100px;
   }
 
     /* 送るのボタン */
