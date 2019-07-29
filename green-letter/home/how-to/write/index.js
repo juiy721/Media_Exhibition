@@ -113,5 +113,20 @@ window.addEventListener("load", init);
           
         }, false);
         
+        var sendBtn = document.getElementById('send-btn');
+        sendBtn.addEventListener('click', function() {
+  
+            console.log('送るのボタンです');
+            // alert('JavaScriptのアラート');
+            if( confirm("手紙を送りますか？") ) {
+                alert("手紙を送りました。");
+            }
+            else {
+                alert("手紙を送りませんでした。");
+            }
+          
+        }, false);
+        
     }
 // 鉛筆の描画終了
+
