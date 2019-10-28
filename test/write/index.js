@@ -114,19 +114,60 @@ window.addEventListener("load", init);
         }, false);
         
         var sendBtn = document.getElementById('send-btn');
-        sendBtn.addEventListener('click', function() {
+        // sendBtn.addEventListener('click', function() {
   
-            console.log('送るのボタンです');
-            // alert('JavaScriptのアラート');
-            if( confirm("手紙を送りますか？") ) {
-                alert("手紙を送りました。");
-            }
-            else {
-                alert("手紙を送りませんでした。");
-            }
+        //     console.log('送るのボタンです');
+        //     // alert('JavaScriptのアラート');
+        //     if( confirm("手紙を送りますか？") ) {
+        //         alert("手紙を送りました。");
+        //     }
+        //     else {
+        //         alert("手紙を送りませんでした。");
+        //     }
           
-        }, false);
+        // }, false);
         
     }
 // 鉛筆の描画終了
 
+
+// 送ったデータをconsoleに表示させる
+
+const form = document.querySelector('#js-form');
+const canvas = document.querySelector('#myCanvas');
+const textarea = document.querySelector('#js-textarea');
+const submitButton = document.querySelector('#info-container');
+
+form.addEventListener('submit', function(e) {
+  // データの送信をキャンセルする
+  e.preventDefault();
+  
+  const url = form.action;
+  
+  // 入力された文字列を取得する
+  const body = textarea.value;
+  
+  // まつざわさんはここでbodyの内容をcanvasに書き込む
+  
+  // canvas に書き込まれた内容を
+  // base64（文字列）にしてbase64という変数に入れておく
+  const base64 = canvas.toDataURL('image/jpeg');
+  
+	axios.post(url, {
+    body: body, // 送信するデータPHP側で$_POSST["body"]で受け取れる
+    base64: base64 // 送信するデータPHP側で$_POSST["base64"]で受け取れる
+  })
+  .then(function (response) {
+    // データの送信に成功したときの処理をここに書く
+  })
+  .catch(function (error) {
+    // データの送信に失敗したときの処理をここに書く
+  });
+  
+  console.log(`
+  	${url} に以下のデータを送ります
+    ${body}
+    ${base64}
+ 	`);
+  
+});
