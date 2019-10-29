@@ -9,21 +9,6 @@
   <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
   <script type="text/javascript" src="index.js"></script>
-  <script>
-      axios.get('api/update')
-      axios.get('api/get?id=3')
-        .then(function(response) {
-          // 成功したとき 
-          console.log(response);
-  
-      const pv = response.data[0].pv;
-  
-      document.querySelector('#js-pv').innerHTML = pv;
-        })
-        .catch(function(error) {
-          // 失敗したとき
-        });
-    </script>
   <title>みどりの書簡</title>
 </head>
 <body>
@@ -150,7 +135,6 @@
         class="canvas">
       </canvas>
     </div>
-    <textarea id="js-textarea">にゃー</textarea>
     <!-- 送るのボタン -->
     <!-- <a href="#">
       <img src="img/send.png" 
@@ -168,4 +152,5 @@
   </section>
 
 </body>
+<script type="text/javascript" src="display.js"></script>
 </html>

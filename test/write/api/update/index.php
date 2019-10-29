@@ -1,7 +1,7 @@
 <?php
-$db = mysqli_connect('localhost', 'root', 'root', 'mydb_20191028');
+$green = mysqli_connect('localhost', 'root', 'root', 'mygreen');
 
-$query = mysqli_query($db, 'SELECT * FROM my_items WHERE 1');
+$query = mysqli_query($green, 'SELECT * FROM my_items WHERE 1');
 
 
 
@@ -12,4 +12,4 @@ while($r = mysqli_fetch_assoc($query)){
     $rows[] = $r;
 }
 
-mysqli_query($db, 'UPDATE counter SET pv=' . $nextPV . ' WHERE id = 3');
+mysqli_query($green, 'UPDATE counter SET pv=' . $nextPV . ' WHERE id = 3');

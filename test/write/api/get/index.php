@@ -1,7 +1,7 @@
 <?php
 // echo $_GET['id'];
 // MYSQLに接続する
-$db = mysqli_connect('localhost', 'root', 'root', 'mygreen');
+$green = mysqli_connect('localhost', 'root', 'root', 'mygreen');
 //SQLを実行する
 $result = mysqli_query($green, 'SELECT * FROM counter WHERE screen_id = ' . $_GET['screen_id']);
 // 結果を入れる配列を作る
