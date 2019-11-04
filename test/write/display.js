@@ -3,7 +3,7 @@
 // const input = document.querySelector('#screen_name #age');
 // const select = document.querySelector('#info-sex3');
 // const canvas = document.querySelector('#myCanvas');
-const form = document.querySelector('#js-form');
+const form = document.querySelector('#send-btn');
 
 form.addEventListener('submit', function(e) {
   // データの送信をキャンセルする

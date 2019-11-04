@@ -16,6 +16,7 @@ $sql = sprintf('INSERT INTO my_items SET screen_name="%s",
 );
 mysqli_query($green, $sql) or die(mysqli_error($green));
 ?>
+
 <?php
 $green = mysqli_connect('localhost', 'root', 'root', 'mygreen') or 
 die(mysqli_connect_error());
