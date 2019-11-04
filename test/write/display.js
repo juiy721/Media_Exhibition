@@ -46,12 +46,10 @@ form.addEventListener('submit', function(e) {
     console.log(error);
   });
   
-  console.log(`
-  	${url} に以下のデータを送ります
-    ${body}
-    ${base64}
-   `);
-   
-  console.log(error);
+  // console.log(`
+  // 	${url} に以下のデータを送ります
+  //   ${body}
+  //   ${base64}
+  //  `);
   
 });
