@@ -6,7 +6,7 @@ const select = document.querySelector('#info-sex3');
 const canvas = document.querySelector('#myCanvas');
 const form = document.querySelector('#send-btn');
 
-console.log(select);
+
 
 form.addEventListener('submit', function(e) {
   console.log('送信が試みられました');
@@ -24,9 +24,10 @@ form.addEventListener('submit', function(e) {
   // // 入力された文字を取得する
   // const body = canvas.value;
   
-  // // canvas に書き込まれた内容を
-  // // base64（文字列）にしてbase64という変数に入れておく
-  // const base64 = canvas.toDataURL('image/jpeg');
+  // canvas に書き込まれた内容を
+  // base64（文字列）にしてbase64という変数に入れておく
+  const base64 = canvas.toDataURL('image/jpeg');
+  console.log(base64);
   
 	// axios.post(url, {
   //   body: body, // 送信するデータPHP側で$_POSST["body"]で受け取れる
