@@ -46,6 +46,6 @@ form.addEventListener('submit', function(e) {
   //   ${base64}
   //  `);
    
-  //  console.log(form);
+  console.log(axios);
   
 });
