@@ -9,606 +9,121 @@
 	],
 "creatorBuild": "31934",
 "files": {
-	"/home/how-to/img/choose.png": {
-		"ft": 32768,
-		"iS": 101259,
-		"oA": 0,
-		"oAP": "/home/how-to/img/choose.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/img/header/choose.png": {
-		"ft": 32768,
-		"iS": 101259,
-		"oA": 0,
-		"oAP": "/home/how-to/img/header/choose.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/img/header/how-to.png": {
-		"ft": 32768,
-		"iS": 74997,
-		"oA": 0,
-		"oAP": "/home/how-to/img/header/how-to.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/img/header/logo.png": {
-		"ft": 32768,
-		"iS": 21051,
-		"oA": 0,
-		"oAP": "/home/how-to/img/header/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/img/header/write.png": {
-		"ft": 32768,
-		"iS": 76454,
-		"oA": 0,
-		"oAP": "/home/how-to/img/header/write.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/img/return-to-contents.png": {
-		"ft": 32768,
-		"iS": 13872,
-		"oA": 0,
-		"oAP": "/home/how-to/img/return-to-contents.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/img/tegami_yama.png": {
-		"ft": 32768,
-		"iS": 163501,
-		"oA": 0,
-		"oAP": "/home/how-to/img/tegami_yama.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/index.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/index-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/index.html",
-		"oF": 0
-		},
-	"/home/how-to/ress.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/ress.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/write/choose/img/choose.png": {
-		"ft": 32768,
-		"iS": 101259,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/choose.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/img/frame1.png": {
+	"/choose/img/frame1.png": {
 		"ft": 32768,
 		"iS": 109845,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/frame1.png",
+		"oAP": "/choose/img/frame1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/frame2.png": {
+	"/choose/img/frame2.png": {
 		"ft": 32768,
 		"iS": 142401,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/frame2.png",
+		"oAP": "/choose/img/frame2.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/frame3.png": {
+	"/choose/img/frame3.png": {
 		"ft": 32768,
 		"iS": 146973,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/frame3.png",
+		"oAP": "/choose/img/frame3.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/frame4.png": {
+	"/choose/img/frame4.png": {
 		"ft": 32768,
 		"iS": 116894,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/frame4.png",
+		"oAP": "/choose/img/frame4.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/header/choose.png": {
+	"/choose/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/choose/index.html",
+		"oF": 0
+		},
+	"/choose/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/choose/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/common/header/choose.png": {
 		"ft": 32768,
 		"iS": 101259,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/header/choose.png",
+		"oAP": "/common/header/choose.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/header/how-to.png": {
+	"/common/header/how-to.png": {
 		"ft": 32768,
 		"iS": 74997,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/header/how-to.png",
+		"oAP": "/common/header/how-to.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/header/logo.png": {
+	"/common/header/logo.png": {
 		"ft": 32768,
 		"iS": 21051,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/header/logo.png",
+		"oAP": "/common/header/logo.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/img/header/write.png": {
+	"/common/header/write.png": {
 		"ft": 32768,
 		"iS": 76454,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/img/header/write.png",
+		"oAP": "/common/header/write.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"/home/how-to/write/choose/index.css": {
+	"/common/ress.min.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/home/how-to/write/choose/index-min.css",
+		"oAP": "/common/ress.min-min.css",
 		"oF": 0,
 		"oS": 3
-		},
-	"/home/how-to/write/choose/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/index.html",
-		"oF": 0
-		},
-	"/home/how-to/write/choose/ress.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/ress.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/write/choose/see/img/copy.png": {
-		"ft": 32768,
-		"iS": 248781,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/copy.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/header/choose.png": {
-		"ft": 32768,
-		"iS": 101259,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/header/choose.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/header/how-to.png": {
-		"ft": 32768,
-		"iS": 74997,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/header/how-to.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/header/logo.png": {
-		"ft": 32768,
-		"iS": 21051,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/header/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/header/write.png": {
-		"ft": 32768,
-		"iS": 76454,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/header/write.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/hello.png": {
-		"ft": 32768,
-		"iS": 33062,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/hello.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/print.png": {
-		"ft": 32768,
-		"iS": 130081,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/print.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/return.png": {
-		"ft": 32768,
-		"iS": 8839,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/return.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/img/tegami.png": {
-		"ft": 32768,
-		"iS": 4485,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/img/tegami.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/choose/see/index.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/index-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/write/choose/see/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/index.html",
-		"oF": 0
-		},
-	"/home/how-to/write/choose/see/ress.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/choose/see/ress.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/write/img/binsen.png": {
-		"ft": 32768,
-		"iS": 34327,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/binsen.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/enpitu.png": {
-		"ft": 32768,
-		"iS": 14395,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/enpitu.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/header/choose.png": {
-		"ft": 32768,
-		"iS": 101259,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/header/choose.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/header/how-to.png": {
-		"ft": 32768,
-		"iS": 74997,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/header/how-to.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/header/logo.png": {
-		"ft": 32768,
-		"iS": 21051,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/header/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/header/write.png": {
-		"ft": 32768,
-		"iS": 76454,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/header/write.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/kesigomu.png": {
-		"ft": 32768,
-		"iS": 9650,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/kesigomu.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/modoru.png": {
-		"ft": 32768,
-		"iS": 12076,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/modoru.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/ok.png": {
-		"ft": 32768,
-		"iS": 4692,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/ok.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/send.png": {
-		"ft": 32768,
-		"iS": 7786,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/send.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/susumu.png": {
-		"ft": 32768,
-		"iS": 12223,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/susumu.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/tegami.png": {
-		"ft": 32768,
-		"iS": 4485,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/tegami.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/img/yes.png": {
-		"ft": 32768,
-		"iS": 6045,
-		"oA": 0,
-		"oAP": "/home/how-to/write/img/yes.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/how-to/write/index.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/index-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/write/index.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/index.html",
-		"oF": 0
-		},
-	"/home/how-to/write/index.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/home/how-to/write/index-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
-		},
-	"/home/how-to/write/index.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/index.php",
-		"oF": 0
-		},
-	"/home/how-to/write/ress.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/ress.min-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/home/how-to/write/write_do.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/home/how-to/write/write_do.php",
-		"oF": 0
-		},
-	"/home/img/header/choose.png": {
-		"ft": 32768,
-		"iS": 101259,
-		"oA": 0,
-		"oAP": "/home/img/header/choose.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/img/header/how-to.png": {
-		"ft": 32768,
-		"iS": 74997,
-		"oA": 0,
-		"oAP": "/home/img/header/how-to.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/img/header/logo.png": {
-		"ft": 32768,
-		"iS": 21051,
-		"oA": 0,
-		"oAP": "/home/img/header/logo.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/home/img/header/write.png": {
-		"ft": 32768,
-		"iS": 76454,
-		"oA": 0,
-		"oAP": "/home/img/header/write.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		},
 	"/home/img/img_1.png": {
 		"ft": 32768,
@@ -643,16 +158,6 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/home/index.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/home/index-min.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"/home/index.html": {
 		"cB": 0,
 		"ft": 8192,
@@ -661,13 +166,265 @@
 		"oAP": "/home/index.html",
 		"oF": 0
 		},
-	"/home/ress.min.css": {
+	"/home/style.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "/home/ress.min-min.css",
+		"oAP": "/home/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/how-to/img/return-to-contents.png": {
+		"ft": 32768,
+		"iS": 13872,
+		"oA": 0,
+		"oAP": "/how-to/img/return-to-contents.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/how-to/img/tegami_yama.png": {
+		"ft": 32768,
+		"iS": 163501,
+		"oA": 0,
+		"oAP": "/how-to/img/tegami_yama.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/how-to/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/how-to/index.html",
+		"oF": 0
+		},
+	"/how-to/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/how-to/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/see/img/copy.png": {
+		"ft": 32768,
+		"iS": 248781,
+		"oA": 0,
+		"oAP": "/see/img/copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/see/img/hello.png": {
+		"ft": 32768,
+		"iS": 33062,
+		"oA": 0,
+		"oAP": "/see/img/hello.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/see/img/print.png": {
+		"ft": 32768,
+		"iS": 130081,
+		"oA": 0,
+		"oAP": "/see/img/print.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/see/img/return.png": {
+		"ft": 32768,
+		"iS": 8839,
+		"oA": 0,
+		"oAP": "/see/img/return.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/see/img/tegami.png": {
+		"ft": 32768,
+		"iS": 4485,
+		"oA": 0,
+		"oAP": "/see/img/tegami.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/see/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/see/index.html",
+		"oF": 0
+		},
+	"/see/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/see/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/write/img/binsen.png": {
+		"ft": 32768,
+		"iS": 34327,
+		"oA": 0,
+		"oAP": "/write/img/binsen.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/enpitu.png": {
+		"ft": 32768,
+		"iS": 14395,
+		"oA": 0,
+		"oAP": "/write/img/enpitu.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/kesigomu.png": {
+		"ft": 32768,
+		"iS": 9650,
+		"oA": 0,
+		"oAP": "/write/img/kesigomu.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/modoru.png": {
+		"ft": 32768,
+		"iS": 12076,
+		"oA": 0,
+		"oAP": "/write/img/modoru.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/ok.png": {
+		"ft": 32768,
+		"iS": 4692,
+		"oA": 0,
+		"oAP": "/write/img/ok.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/send.png": {
+		"ft": 32768,
+		"iS": 7786,
+		"oA": 0,
+		"oAP": "/write/img/send.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/susumu.png": {
+		"ft": 32768,
+		"iS": 12223,
+		"oA": 0,
+		"oAP": "/write/img/susumu.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/tegami.png": {
+		"ft": 32768,
+		"iS": 4485,
+		"oA": 0,
+		"oAP": "/write/img/tegami.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/img/yes.png": {
+		"ft": 32768,
+		"iS": 6045,
+		"oA": 0,
+		"oAP": "/write/img/yes.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/write/index.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/write/index.html",
+		"oF": 0
+		},
+	"/write/js/display.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/write/js/display-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/write/js/main.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/write/js/main-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/write/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/write/style-min.css",
 		"oF": 0,
 		"oS": 3
 		}

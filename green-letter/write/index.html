@@ -1,0 +1,157 @@
+<!DOCTYPE html >
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="js/main.js"></script>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../common/ress.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
+  <title>みどりの手紙</title>
+</head>
+<body class="dbg-Border">
+    
+  <div class="header">
+    <h1 class="header-Heading">
+      <a href="../home/index.html">
+        <img src="../common/header/logo.png" class="midori">
+      </a>
+    </h1>
+    <div class = "top-icon-inputs">
+      <a href="../how-to/index.html">
+        <img src="../common/header/how-to.png" class="top-icon">
+      </a>
+      <a href="../write/index.html">
+        <img src="../common/header/write.png" class="top-icon">
+      </a>
+      <a href="../choose/index.html">
+        <img src="../common/header/choose.png" class="top-icon">
+      </a>
+    </div>
+  </div><!--/header-->
+
+  </div>
+
+  <div class="inputs">
+    <div class="inputs-inner">
+      <!-- 大きい手紙の画像 -->
+      <img src="img/tegami.png" class="tegami">
+      
+      <!-- 情報入力コンテナー -->
+      <div class="info-Container">
+        <fieldset class="info-container-from"
+              id="info-container"
+              name="info-container"
+              >
+          <div class="info-box">
+            <p class="info-name">
+              <label class="info-name2"
+                     for="screen_name">
+                名前
+              </label>
+              <input 
+                class="info-name3"
+                type="text" 
+                name="screen_name" 
+                id="screen_name"
+                size="30" 
+                maxlength="10" /> 
+            </p>
+
+            <div class="info-field">
+                <p class="info-sex">
+                  <label class="info-sex2"
+                         for="sex">
+                    性別
+                  </label>
+                  <select name="sex" 
+                          class="info-sex3"
+                          id="info-sex3">
+                    <option value="male">男性</option>
+                    <option value="female">女性</option>
+                    <option value="other">その他</option>
+                  </select>
+                </p>
+
+              <p class="info-nenrei">
+                <label class="info-nenrei-label"
+                       for="age">
+                  年齢
+                </label>
+                <input 
+                  class="info-nenrei2"
+                  type="number" 
+                  name="age"
+                  id="age"
+                  min="10"
+                  max="100"
+                  step="1"
+                  value="" />
+              </p>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+    </div class="inputs-inner">
+  </div>
+
+
+  <p class="tyuui">※手紙を選ぶ人には
+    <a class="bold">一行目のみ</a>
+    表示されます
+  </p>
+
+  <section>
+    <div class="center-line">
+      <div class="write-icons">
+
+        <img src="img/enpitu.png" 
+             class="write-icon enpitu" 
+             alt="鉛筆のアイコン"
+             id="enpitu-btn"> 
+
+        <img src="img/kesigomu.png" 
+             class="write-icon kesigomu" 
+             alt="消しゴムのアイコン"
+             id="kesigomu-btn">
+
+        <img src="img/modoru.png" 
+             class="write-icon modoru" 
+             alt="戻る"
+             id="modoru-btn">
+
+        <img src="img/susumu.png" 
+             class="write-icon susumu" 
+             alt="進む"
+             id="susumu-btn">
+        <!-- altは名前が出る -->
+      </div>
+      
+      <!-- 便箋のキャンバスの大きさ -->
+      <canvas 
+        id="myCanvas" 
+        width="565" 
+        height="600" 
+        class="canvas">
+      </canvas>
+    </div>
+
+    <!-- 送るのボタン -->
+    <form method="post" 
+          action="/api/write_do.php"
+          id="send-btn">
+      <button type="submit" 
+              id="info-container">
+        <img src="img/send.png" 
+             class="send"
+             id="send-btn">
+      </button>
+    </form>
+  </section>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+<script type="text/javascript" src="js/display.js"></script>
+</html>
