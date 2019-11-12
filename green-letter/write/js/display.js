@@ -28,7 +28,7 @@ form.addEventListener('submit', function(e) {
     img.onload = function() {
     // img要素の読み込みが終わったらこの中が処理される
     // 画像をHTMLに追加する
-    document.body.appendChild(img);
+    // document.body.appendChild(img);
     };
     // img要素 srcに画像化（base64化）したcanvasの内容を反映する
     img.src = canvas.toDataURL('image/jpeg');
@@ -46,7 +46,7 @@ form.addEventListener('submit', function(e) {
   params.append('age', age); 
   params.append('base64', base64);
 
-  axios.post(url, params)
+  axios.post('/api/write_do.php', params)
   .then(function (response) {
   // データの送信に成功したときの処理をここに書く
       console.log(response);
@@ -60,6 +60,6 @@ form.addEventListener('submit', function(e) {
   //   ${body}
   //   ${base64}
   //  `);
-  
-  window.location.href = '/how-to/';
+
+  // window.location.href = '../../how-to/index.html';
 });
