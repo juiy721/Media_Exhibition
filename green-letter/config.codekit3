@@ -9,6 +9,28 @@
 	],
 "creatorBuild": "31934",
 "files": {
+	"/choose/img/empty-frame.png": {
+		"ft": 32768,
+		"iS": 65332,
+		"oA": 0,
+		"oAP": "/choose/img/empty-frame.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/choose/img/first-line.png": {
+		"ft": 32768,
+		"iS": 37997,
+		"oA": 0,
+		"oAP": "/choose/img/first-line.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/choose/img/frame1.png": {
 		"ft": 32768,
 		"iS": 109845,
@@ -60,6 +82,17 @@
 		"oA": 0,
 		"oAP": "/choose/index.html",
 		"oF": 0
+		},
+	"/choose/js/after.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/choose/js/after-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
 		},
 	"/choose/style.css": {
 		"aP": 1,
@@ -396,13 +429,13 @@
 		"oAP": "/write/index.html",
 		"oF": 0
 		},
-	"/write/js/display.js": {
+	"/write/js/after.js": {
 		"bF": 0,
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/write/js/display-min.js",
+		"oAP": "/write/js/after-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -417,6 +450,16 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/write/style-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/write/style-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"/write/style.css": {
 		"aP": 1,
