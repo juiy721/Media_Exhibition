@@ -5,7 +5,7 @@ $db = mysqli_connect('localhost', 'root', 'root', 'mygreen') or
 die(mysqli_connect_error());
 mysqli_set_charset($db, 'utf8');
 
-$sql = 'SELECT * FROM `my_items`';
+$sql = 'SELECT * FROM `my_items` WHERE 1';
 
 // SQLを実行、結果を$resultという名前の変数に入れる
 $result = mysqli_query($db, $sql) or die(mysqli_error($db));
