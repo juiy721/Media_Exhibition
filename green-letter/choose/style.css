@@ -17,6 +17,7 @@
   position: fixed;
   width: 100%;
   top: 0
+  z-index: 3;
 }
   .header-Heading {
     width: 350px;
@@ -40,26 +41,35 @@
 .green-frame {
     width: 98%;
     padding:5px;
+    z-index: 1;
 }
-.frame1 {
-  /* margin-top: 90px; */
-  margin-top: 0px;
+.test {
+  padding-top: 90px;
 }
+.first-line {
+  z-index: 2;
+}
+
 .watch {
     font-size: 20pt;
     padding: 30px 0px;
+}
+
+/* 画像を切り取る */
+div.cut img {
+  position: absolute;
+  clip: rect(3px, 561px, 59px, 3px);
+}
+div.cut {
+  width: 310px;
+  bottom: -20px;
+  position: relative;
 }
 
 /* test */
 .letter-container-inner {
   position: relative;
 }
-/* .first-line{
-  width:90px;
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-} */
 
 p {
   margin-top: 100px;
