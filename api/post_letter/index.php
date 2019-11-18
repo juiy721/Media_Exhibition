@@ -1,7 +1,25 @@
 <?php
+
+require 'aws/aws-autoloader.php';
+
+use Aws\S3\S3Client;
+ use Aws\Exception\AwsExpection;
+ use Aws\S3\ObjectUploader;
+
 ini_set('display_errors', 1);
-var_dump($_POST);
 $name = uniqid(mt_rand());
+
+// S3Clientインスタンスの作成
+$array_ini_file = parse_ini_file('credentials.ini', true);
+
+$s3client = S3Client::factory([
+    'credentials' => [
+        'key' => $array_ini_file['ACCESS_KEY'],
+        'secret' => $array_ini_file['SECRET_ACCESS_KEY'],
+    ],
+    'region' => 'ap-northeast-1',
+    'version' => 'latest',
+]);
 
 $data = $_POST['base64'];
 if (preg_match('/^data:image\/(\w+);base64,/', $data, $type)) {
@@ -14,12 +32,20 @@ if (preg_match('/^data:image\/(\w+);base64,/', $data, $type)) {
     if ($data === false) {
         throw new \Exception('base64_decode failed');
     }
- } else {
+} else {
     throw new \Exception('did not match data URI with image data');
- }
- file_put_contents("images/{$name}.{$type}", $data);
+}
+$fileName = "{$name}.{$type}";
+ file_put_contents("images/$fileName", $data);
  
-
+// S3にアップロード
+$result = $s3client->putObject([
+    'ACL' => 'public-read',
+    'Bucket' => $array_ini_file['BUCKET_NAME'],
+    'Key' => "upload/$fileName",
+    'SourceFile' => "images/$fileName",
+    'ContentType' => mime_content_type("images/$fileName"),
+]);
  
 $green = mysqli_connect('localhost', 'root', 'root', 'mygreen') or 
 die(mysqli_connect_error());
