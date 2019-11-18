@@ -46,7 +46,7 @@ form.addEventListener('submit', function(e) {
   params.append('age', age); 
   params.append('base64', base64);
 
-  axios.post('/api/write_do.php', params)
+  axios.post(url, params)
   .then(function (response) {
   // データの送信に成功したときの処理をここに書く
       console.log(response);

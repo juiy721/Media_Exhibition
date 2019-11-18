@@ -17,7 +17,7 @@ if (preg_match('/^data:image\/(\w+);base64,/', $data, $type)) {
  } else {
     throw new \Exception('did not match data URI with image data');
  }
- file_put_contents("{$name}.{$type}", $data);
+ file_put_contents("images/{$name}.{$type}", $data);
  
 
  
