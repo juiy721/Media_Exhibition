@@ -13,7 +13,7 @@ axios.get('/api/get_letter?offset=0')
         <a href="../see?id=1/">
         <div class="cut">
             <img src="/api/post_letter/images/${response.data[i].img}.jpeg"
-                 class="first-line" />
+                 class="line" />
         </div>
         <img src="img/empty-frame.png"
               class="green-frame"

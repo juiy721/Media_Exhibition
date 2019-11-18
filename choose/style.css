@@ -16,7 +16,7 @@
   display: flex;
   position: fixed;
   width: 100%;
-  top: 0
+  top: 0;
   z-index: 3;
 }
   .header-Heading {
@@ -43,16 +43,11 @@
     padding:5px;
     z-index: 1;
 }
-.test {
-  padding-top: 90px;
-}
-.first-line {
+.line {
   z-index: 2;
 }
-
-.watch {
-    font-size: 20pt;
-    padding: 30px 0px;
+.empty {
+  margin-top: 90px;
 }
 
 /* 画像を切り取る */
@@ -61,8 +56,8 @@ div.cut img {
   clip: rect(3px, 561px, 59px, 3px);
 }
 div.cut {
-  width: 310px;
-  bottom: -20px;
+  width: 270px;
+  bottom: -25px;
   position: relative;
 }
 
