@@ -50,6 +50,7 @@ form.addEventListener('submit', function(e) {
   .then(function (response) {
   // データの送信に成功したときの処理をここに書く
       console.log(response);
+      window.location.href = '/../choose'
   })
   .catch(function (error) {
   // データの送信に失敗したときの処理をここに書く

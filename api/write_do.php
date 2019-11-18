@@ -1,6 +1,5 @@
 <?php
 ini_set('display_errors', 1);
-
 var_dump($_POST);
 $name = uniqid(mt_rand());
 
