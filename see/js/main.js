@@ -1,6 +1,6 @@
 // データを取得する
 
-axios.get('/api/get_letter.php')
+axios.get('/api/get_letter/')
 .then(function (response) {
 // データの送信に成功したときの処理をここに書く
     console.log(response);
@@ -9,8 +9,8 @@ axios.get('/api/get_letter.php')
     el.innerHTML = `
     <div>
         <p>${response.data[0].img}</p>
-        <a href="../see?id=1/">
-            <img src="/../../api/${response.data[0].img}.jpeg" />
+        <a href="../see?id=1">
+            <img src="/../api/post_letter/images/${response.data[0].img}.jpeg" />
         </a>
     </div>
     `;

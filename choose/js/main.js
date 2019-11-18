@@ -1,6 +1,6 @@
 // データを取得する
 
-axios.get('/api/get_letter.php')
+axios.get('/api/get_letter?offset=0')
 .then(function (response) {
 // データの送信に成功したときの処理をここに書く
     console.log(response);
@@ -12,7 +12,7 @@ axios.get('/api/get_letter.php')
         html += `
         <a href="../see?id=1/">
         <div class="cut">
-            <img src="/../../api/${response.data[i].img}.jpeg"
+            <img src="/api/post_letter/images/${response.data[i].img}.jpeg"
                  class="first-line" />
         </div>
         <img src="img/empty-frame.png"

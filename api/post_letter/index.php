@@ -42,4 +42,3 @@ $green = mysqli_connect('localhost', 'root', 'root', 'mygreen') or
 die(mysqli_connect_error());
 mysqli_set_charset($green, 'utf8');
 ?>
-<p>手紙を送りました。</p>
