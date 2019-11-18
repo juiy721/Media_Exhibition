@@ -7,7 +7,10 @@ axios.get('/api/get_letter.php')
     console.log(response.data[0].img);
     var el = document.getElementById("test");
     el.innerHTML = `
-    <p>${response.data[0].img}</p>
+    <div>
+        <p>${response.data[0].img}</p>
+        <img src=${response.data[0].img} />
+    </div>
     `;
 })
 .catch(function (error) {
@@ -15,4 +18,3 @@ axios.get('/api/get_letter.php')
     console.log(error);
 });
 console.log(axios);
-
