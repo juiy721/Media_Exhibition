@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
   <link rel="stylesheet" type="text/css" href="../common/ress.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
   <title>みどりの手紙</title>
 </head>
@@ -37,20 +38,25 @@
       <div>
         <div class="side_by_side green1">
           <p class="double-space">名前</p>
-          <p class="space1">monmon</p>
+          <div class="space1"
+               id="screen_name"></div>
         </div>
         <div class="side_by_side green2">
           <p class="double-space">性別・年齢</p>
-          <p class="space2">男性・20歳</p>
+          <div class="display-flex">
+            <div id="sex"></div>
+            <p>・</p>
+            <div id="age"></div>
+          </div>
         </div>
         <div class="side_by_side green1">
           <p class="double-space">投稿日時</p>
-          <p class="space3">2019/06/11 10:11</p>
+          <div class="space3"
+               id="posting_time"></div>
         </div>
         <div class="green2">
           <p class="double-space">手紙内容</p>
-          <!-- <div id="test"></div> -->
-          <img src="img/hello.png" class="hello">
+          <div id="img"></div>
         </div>
       </div>
     </div>
@@ -64,7 +70,10 @@
           <img src="img/print.png" class="print" alt="プリント画面">
         </div>
         <p class="text">プリントの期限は7日間です。</p>
-        <p class="text">2019/06/18までにプリントしてください。</p>
+        <div class="display-flex">
+          <div id="deadline"></div>
+          <p class="text">&nbsp;までにプリントしてください。</p>
+        </div>
       </div>
     </div>
     <a href="../choose">
@@ -72,6 +81,5 @@
     </a>
   </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </html>

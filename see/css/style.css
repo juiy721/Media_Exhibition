@@ -17,6 +17,7 @@
   position: fixed;
   width: 100%;
   top: 0;
+  z-index: 2;
 }
   .header-Heading {
     width: 350px;
@@ -40,13 +41,10 @@
 
 .side_by_side {
   display: flex;
+  padding-right: 185px;
 }
 
 /* 画像 */
-.hello {
-  width: 65%;
-  padding: 40px 0px 55px 60px;
-}
 .copy {
   width: 36%;
   height: 36%;
@@ -60,12 +58,25 @@
 .tegami {
   width: 10%;
   height: 10%;
-  background-color: white;
+  background-color: #F8F9EE;
   padding-bottom: 254px;
 }
 .return {
   width: 17%;
   margin-top: 10px;
+}
+/* 画像を切り取る */
+div.cut img {
+  position: absolute;
+  clip: rect(3px, 561px, 59px, 3px);
+}
+div.cut {
+  left: 20px;
+  top: 35px;
+  position: relative;
+}
+.line {
+  z-index: 1;
 }
 
 /* 全角スペース1つ分 */
@@ -97,8 +108,9 @@
   margin: 100px 40px 20px 40px;
   font-size: 25px;
   border: solid 1px #65AC69;
-  padding: 0px 0px;
+  padding: 0px;
   text-align: left;
+  background: white;
 }
 
 /* 下の画面 */
@@ -117,3 +129,8 @@
     .text {
       padding-bottom: 3px;
     }
+
+/* display:flex; にする簡単なお仕事 */
+.display-flex {
+  display: flex;
+}
