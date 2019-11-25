@@ -45,6 +45,11 @@ axios.get('/api/get_letter?offset=0')
         </div>
     </div>
     `;
+    // print_id
+    var Img = document.getElementById("print_id");
+    Img.innerHTML = `
+        ${response.data[url].print_id}
+    `;
     // deadline
     var Deadline = document.getElementById("deadline");
         // 日付を取得して表示
