@@ -1,6 +1,6 @@
 // データを取得する
 
-axios.get('/api/get_letter?offset=0')
+axios.get('/api/get_letters?offset=0')
 .then(function (response) {
 // データの送信に成功したときの処理をここに書く
     console.log(response);
@@ -8,9 +8,9 @@ axios.get('/api/get_letter?offset=0')
     var el = document.getElementById("test");
     let html = '';
     for (var i = 0; i < response.data.length; i++) {
-        console.log(response.data[i]);
+        // console.log(response.data[i]);
         html += `
-        <a href="../see?${response.data[i].screen_id}">
+        <a href="../see?id=${response.data[i].screen_id}">
         <div class="cut">
             <img src="/api/post_letter/images/${response.data[i].img}.jpeg"
                  class="line" />

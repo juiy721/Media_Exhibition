@@ -115,6 +115,9 @@ div.cut {
   text-align: left;
   background: white;
 }
+.up-inputs-inner{
+  width: 90%;
+}
 
 /* 下の画面 */
 .down-inputs {
