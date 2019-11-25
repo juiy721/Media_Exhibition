@@ -10,7 +10,7 @@ axios.get('/api/get_letter?offset=0')
     for (var i = 0; i < response.data.length; i++) {
         console.log(response.data[i]);
         html += `
-        <a href="../see?id=1/">
+        <a href="../see?${response.data[i].screen_id}">
         <div class="cut">
             <img src="/api/post_letter/images/${response.data[i].img}.jpeg"
                  class="line" />

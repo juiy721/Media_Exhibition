@@ -7,6 +7,7 @@ mysqli_set_charset($db, 'utf8');
 
 // $sql = 'SELECT * FROM `my_items` LIMIT 5 OFFSET 0';
 $sql = sprintf('SELECT * FROM `my_items` LIMIT 5 OFFSET %d',
+// $sql = sprintf('SELECT * FROM `my_items` ORDER BY screen_id DESC LIMIT 0,10',
 mysqli_real_escape_string($db, $_GET['offset']));
 
 // SQLを実行、結果を$resultという名前の変数に入れる

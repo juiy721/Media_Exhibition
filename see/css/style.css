@@ -41,7 +41,7 @@
 
 .side_by_side {
   display: flex;
-  padding-right: 185px;
+  padding-right: 175px;
 }
 
 /* 画像 */
@@ -92,7 +92,7 @@ div.cut {
   padding-left: 2em;
 }
 .space3 {
-  padding-left: 3em;
+  padding-left: 2.5em;
 }
 
 /* 背景の色 */
@@ -101,6 +101,9 @@ div.cut {
 }
 .green2 {
   background-color: #EAF2D1;
+}
+.white {
+  background-color: white;
 }
 
 /* 上の画面 */
