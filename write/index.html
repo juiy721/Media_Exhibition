@@ -69,6 +69,7 @@
                   <select name="sex" 
                           class="info-sex3"
                           id="info-sex3">
+                    <option value="なし">----</option>
                     <option value="男性">男性</option>
                     <option value="女性">女性</option>
                     <option value="その他">その他</option>
@@ -80,7 +81,7 @@
                        for="age">
                   年齢
                 </label>
-                <input 
+                <select 
                   class="info-nenrei2"
                   type="number" 
                   name="age"
@@ -88,7 +89,19 @@
                   min="10"
                   max="100"
                   step="1"
-                  value="" />
+                  value="" >
+                  <option value="なし">----</option>
+                  <option value="10歳未満">10歳未満</option>
+                  <option value="10代">10代</option>
+                  <option value="20代">20代</option>
+                  <option value="30代">30代</option>
+                  <option value="40代">40代</option>
+                  <option value="50代">50代</option>
+                  <option value="60代">60代</option>
+                  <option value="70代">70代</option>
+                  <option value="80代">80代</option>
+                  <option value="90代">90代</option>
+                </select>
               </p>
             </div>
           </div>

@@ -41,7 +41,7 @@
 
 .side_by_side {
   display: flex;
-  padding-right: 175px;
+  /* padding-right: 175px; */
 }
 
 /* 画像 */

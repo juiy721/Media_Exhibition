@@ -27,11 +27,11 @@ axios.get('/api/get_letter?offset=0')
     `;
     // posting_time
     var postingTime = document.getElementById("posting_time");
-        // 日付を取得して表示
-        const dateTime = new Date(response.data[0].posting_time);
-        console.log(dateTime.toLocaleString());
+    // 日付を取得する
+    const dateTime = luxon.DateTime.fromFormat(response.data[0].posting_time, 'yyyy-MM-dd hh:mm:ss');
+    console.log(dateTime.toFormat('yyyy年MM月dd日 hh時mm分'));
     postingTime.innerHTML = `
-    <p>${dateTime.toLocaleString()}</p>
+    <p>${dateTime.toFormat('yyyy年MM月dd日 hh時mm分')}</p>
     `;
     // img
     var Img = document.getElementById("img");
@@ -50,14 +50,14 @@ axios.get('/api/get_letter?offset=0')
     `;
     // deadline
     var Deadline = document.getElementById("deadline");
-        // 日付を取得して表示
-        const future = new Date(response.data[0].posting_time);
-        // 取得した日付の7日後を表示
-        future.setDate(future.getDate() + 7);
-        console.log(future.toLocaleString());
+
+        // 7日後の時刻を作る
+        const deadline = dateTime.plus({ days: 7 });
+        // 7日後の日付をフォーマットしてコンソールに表示する
+        console.log(deadline.toFormat('yyyy年MM月dd日 23時29分'));
     
     Deadline.innerHTML = `
-    <p>${future.toLocaleString()}</p>
+    <p>${deadline.toFormat('yyyy年MM月dd日 23時29分')}</p>
     `;
 }).catch(function (error) {
 // データの送信に失敗したときの処理をここに書く
