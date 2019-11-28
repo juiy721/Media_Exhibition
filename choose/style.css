@@ -59,6 +59,19 @@ div.cut {
   width: 270px;
   bottom: -25px;
   position: relative;
+  z-index: 1;
+}
+
+.letter_innner {
+  position: relative;
+}
+.return_top {
+  width: 10%;
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  z-index: 2;
+  position: fixed;
 }
 
 /* test */

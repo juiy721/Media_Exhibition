@@ -11,14 +11,14 @@ axios.get('/api/get_letters?offset=0')
         // console.log(response.data[i]);
         html += `
         <a href="../see?id=${response.data[i].screen_id}">
-        <div class="cut">
-            <img src="/api/post_letter/images/${response.data[i].img}.jpeg"
-                 class="line" />
-        </div>
-        <img src="img/empty-frame.png"
-              class="green-frame"
-              alt="" />
-    </a>
+            <div class="cut">
+                <img src="/api/post_letter/images/${response.data[i].img}.jpeg"
+                    class="line" />
+            </div>
+            <img src="img/empty-frame.png"
+                class="green-frame"
+                alt="" />
+        </a>
     `;
  }
     el.innerHTML = `

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
   <link rel="stylesheet" type="text/css" href="../common/ress.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
@@ -32,8 +33,28 @@
     </div>
   </div><!--/header-->
   <div class="empty"></div>
-  <div id="test"
-        class="green-frame">
+  <div class="letter_innner">
+    <div id="test"
+          class="green-frame">
+    </div>
+    <a href="#">
+      <img src="img/return_top.svg" class="return_top"/>
+    </a>
+    <!-- ＃リンクのスムーズスクロール -->
+    <script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top ;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
   </div>
   <!-- <p class="watch"><a href="#">もっと見る</a></p> -->
 </body>
