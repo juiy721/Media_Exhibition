@@ -38,38 +38,8 @@
     }
 /* ヘッダー終了 */
 
-/* もっと見る実装 */
-.green-frame {
-  position: relative;
-  overflow: hidden;
-  height: 80px; /*隠した状態の高さ*/
-}
-.green-frame::before {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 40px; /*グラデーションで隠す高さ*/
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
-  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
-  content: "";
-}
-.grad-trigger {
-  display: none; /*チェックボックスは常に非表示*/
-}
-.grad-trigger:checked + .watch_more {
-  display: none; /*チェックされていたら、watch_moreを非表示にする*/
-}
-.grad-trigger:checked ~ .green-frame {
-  height: auto; /*チェックされていたら、高さを戻す*/
-}
-.grad-trigger:checked ~ .green-frame::before {
-  display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
-}
-
 /* 手紙の一行目たち */
-.green-frame {
+.first_lines {
     width: 98%;
     padding:5px;
     z-index: 1;
@@ -96,6 +66,8 @@ div.cut {
 /* トップへ戻るボタン */
 .letter_innner {
   position: relative;
+  overflow: hidden;
+  bottom: 0px;
 }
 .return_top {
   width: 10%;
@@ -114,4 +86,68 @@ div.cut {
 p {
   margin-top: 100px;
   font-size: 50px;
+}
+
+/* もっと見る実装 */
+.readmore{
+  position: relative;
+  box-sizing: border-box;
+}
+.readmore-content{
+  position: relative;
+  overflow: hidden;
+  /*以下お好み*/
+  /*高さの初期値*/
+  height: 1800px;
+}
+.readmore-content::before {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  content: "";
+  /*以下お好み グラデーションの色と高さ 高さはreadmoreのheight以下にすること*/
+  height: 50px;
+  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 50%, #fff 100%);
+  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.8) 50%, #fff 100%);
+}
+/* 続きを読むボタン */
+.readmore-label{
+  display: table;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  margin: 0 auto;
+  z-index: 2;
+  padding: 0 10px;
+  color: #2771BA;
+}
+.readmore-label:before{
+  content: 'もっと見る';
+}
+
+.readmore-check{
+  display: none;
+}
+/*チェック時にボタンを非表示*/
+.readmore-check:checked ~ .readmore-label{
+  position: static;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  /* 「続きを読む」を押した後、元に戻す必要がない場合は、上のオプションを消してこの1行だけにする */
+  /* display: none; */
+}
+.readmore-check:checked ~ .readmore-label:before{
+  content: 'もとに戻す';
+}
+/*チェック時に高さを自動に戻す*/
+.readmore-check:checked ~ .readmore-content{
+  height: auto;
+}
+/*チェック時グラデーション等を削除*/
+.readmore-check:checked ~ .readmore-content::before {
+  display: none;
 }

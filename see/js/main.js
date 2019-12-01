@@ -1,9 +1,10 @@
 // データを取得する
-
-axios.get('/api/get_letter?offset=0')
+// function url(){
+var url = location.search.substring(1);
+console.log(url);
+axios.get('/api/get_letter?screen_id=' + url + '')
 .then(function (response) {
 // データの送信に成功したときの処理をここに書く
-    //iの?以降の文字を取得する
     console.log(response);
     console.log(response.data[0].screen_name);
     console.log(response.data[0].sex);
@@ -29,9 +30,9 @@ axios.get('/api/get_letter?offset=0')
     var postingTime = document.getElementById("posting_time");
     // 日付を取得する
     const dateTime = luxon.DateTime.fromFormat(response.data[0].posting_time, 'yyyy-MM-dd hh:mm:ss');
-    console.log(dateTime.toFormat('yyyy年MM月dd日 hh時mm分'));
+    console.log(dateTime.toFormat('yyyy年MM月dd日 H時mm分'));
     postingTime.innerHTML = `
-    <p>${dateTime.toFormat('yyyy年MM月dd日 hh時mm分')}</p>
+    <p>${dateTime.toFormat('yyyy年MM月dd日 H時mm分')}</p>
     `;
     // img
     var Img = document.getElementById("img");
@@ -64,3 +65,4 @@ axios.get('/api/get_letter?offset=0')
     console.log(error);
 });
 console.log(axios);
+// }

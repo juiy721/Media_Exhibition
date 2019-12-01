@@ -34,31 +34,19 @@
   </div><!--/header-->
   <div class="empty"></div>
   <div class="letter_innner">
-    <input id="trigger1" class="grad-trigger" type="checkbox">
-    <label class="watch_more" for="trigger1">もっと見る</label>
-    <div id="test"
-          class="green-frame">
+    <div class="readmore">
+      <input id="check1" class="readmore-check" type="checkbox">
+      <div class="readmore-content">
+        <div id="first_lines"
+              class="first_lines">
+        </div><!--/first_line-->
+      </div>
+      <label class="readmore-label" for="check1"></label>
     </div>
     <a href="#">
       <img src="img/return_top.svg" class="return_top"/>
-    </a>
-    <!-- ＃リンクのスムーズスクロール -->
-    <script>
-      $(function(){
-        // #で始まるリンクをクリックしたら実行されます
-        $('a[href^="#"]').click(function() {
-          // スクロールの速度
-          var speed = 400; // ミリ秒で記述
-          var href= $(this).attr("href");
-          var target = $(href == "#" || href == "" ? 'html' : href);
-          var position = target.offset().top ;
-          $('body,html').animate({scrollTop:position}, speed, 'swing');
-          return false;
-        });
-      });
-    </script>
+    </a><!-- /return_top -->
   </div>
-  <!-- <p class="watch"><a href="#">もっと見る</a></p> -->
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
 <script type="text/javascript" src="js/main.js"></script>

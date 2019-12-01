@@ -143,9 +143,9 @@ html, body{
       font-size: 15px;
     }
 
-    /* このクラスを使うと文字を太字にできる */
     .bold{
       font-weight: bold;
+      color: #F0573B;
     }
 
     section {

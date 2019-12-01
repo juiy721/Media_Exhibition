@@ -27,6 +27,9 @@ body:before {
   background-color: #EDFFDB;
   background-position: bottom;
 }
+a{
+  text-decoration: none;
+}
 
 /* ヘッダー */
 .header {
