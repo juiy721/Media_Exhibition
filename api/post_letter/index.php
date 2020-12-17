@@ -3,8 +3,8 @@
 require 'aws/aws-autoloader.php';
 
 use Aws\S3\S3Client;
- use Aws\Exception\AwsExpection;
- use Aws\S3\ObjectUploader;
+use Aws\Exception\AwsExpection;
+use Aws\S3\ObjectUploader;
 
 ini_set('display_errors', 1);
 $name = uniqid(mt_rand());
@@ -47,7 +47,7 @@ $result = $s3client->putObject([
     'ContentType' => mime_content_type("images/$fileName"),
 ]);
  
-$green = mysqli_connect('localhost', 'root', 'root', 'mygreen') or 
+$green = mysqli_connect('127.0.0.1', 'root', 'NZU@789xyz', 'green-letter') or 
 die(mysqli_connect_error());
 mysqli_set_charset($green, 'utf8');
 
@@ -64,7 +64,7 @@ mysqli_query($green, $sql) or die(mysqli_error($green));
 ?>
 
 <?php
-$green = mysqli_connect('localhost', 'root', 'root', 'mygreen') or 
-die(mysqli_connect_error());
-mysqli_set_charset($green, 'utf8');
+// $green = mysqli_connect('http://18.176.91.25/', 'root', 'NZU@789xyz', 'mygreen') or 
+// die(mysqli_connect_error());
+// mysqli_set_charset($green, 'utf8');
 ?>

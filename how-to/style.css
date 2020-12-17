@@ -28,7 +28,7 @@ body:before {
   background-position: bottom;
 }
 a{
-  text-decoration: none;
+  text-decoration: top;
 }
 
 /* ヘッダー */

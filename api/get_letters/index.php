@@ -5,8 +5,8 @@ $db = mysqli_connect('127.0.0.1', 'root', 'NZU@789xyz', 'green-letter') or
 die(mysqli_connect_error());
 mysqli_set_charset($db, 'utf8');
 
-$sql = sprintf('SELECT * FROM `my_items` WHERE `screen_id` = %d' ,
-mysqli_real_escape_string($db, $_GET['screen_id']));
+$sql = sprintf('SELECT * FROM `my_items` ORDER BY `screen_id` DESC LIMIT 50 OFFSET %d' ,
+mysqli_real_escape_string($db, $_GET['offset']));
 
 // SQLを実行、結果を$resultという名前の変数に入れる
 $result = mysqli_query($db, $sql) or die(mysqli_error($db));
